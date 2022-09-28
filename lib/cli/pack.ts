@@ -67,8 +67,10 @@ export const packHandler = async ({ handlerPath, outputFolder, publicFolder, sta
 	// We need to create symlink because we are not using NodejsFunction in CDK as bundling is custom.
 	const tmpFolder = tmpdir()
 
-	const symlinkPath = path.resolve(tmpFolder, `./node_modules_${Math.random()}`)
-	symlinkSync(lambdaNodeModulesPath, symlinkPath)
+	const symlinkPath = path.resolve(tmpFolder, `node_modules_${Math.random()}`)
+	console.log(symlinkPath)
+	// symlinkSync(lambdaNodeModulesPath, symlinkPath)
+	console.log(lambdaNodeModulesPath)
 
 	const nextConfig = findInFile(generatedNextServerPath, nextServerConfigRegex)
 	const configPath = path.resolve(tmpFolder, `./config.json_${Math.random()}`)
@@ -96,7 +98,7 @@ export const packHandler = async ({ handlerPath, outputFolder, publicFolder, sta
 				name: 'handler.js',
 			},
 			{
-				isFile: true,
+				isSymlink: true,
 				path: symlinkPath,
 				name: 'node_modules',
 			},

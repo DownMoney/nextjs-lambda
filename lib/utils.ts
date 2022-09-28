@@ -237,7 +237,7 @@ export const zipMultipleFoldersOrFiles = async ({ outputName, inputDefinition }:
 			if ('isFile' in props) {
 				archive.file(props.path, { name: props.name })
 			} else if ('isSymlink' in props) {
-				archive.symlink(props.source, props.target)
+				archive.symlink("node_modules", "/opt/nodejs/node_modules")
 			} else if ('isGlob' in props) {
 				archive.glob(props.path, props)
 			} else {
