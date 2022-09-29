@@ -4,7 +4,7 @@ This is a project allowing to deploy Next applications (standalone options turne
 
 This is an alternative to existing Lambda@Edge implementation ([see](https://www.npmjs.com/package/@sls-next/lambda-at-edge)) as it has too many limitations (primarily inability to use env vars) and deployments take too long.
 
-This library uses Cloudfront, S3, ApiGateway and Lambdas to deploy easily in seconds (hotswap supported).
+This library uses Cloudfront, S3, ApiGateway and Lambdas to deploy easily in seconds (hotswap supported)
 
 
 - [NextJS Lambda Utils](#nextjs-lambda-utils)
