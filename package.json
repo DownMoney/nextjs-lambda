@@ -1,10 +1,10 @@
 {
-  "name": "@sladg/nextjs-lambda",
+  "name": "@downmoney/nextjs-lambda",
   "version": "3.6.6",
   "description": "Plug-and-play lambda for replacing default NextJS image optimization handler.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sladg/nextjs-lambda"
+    "url": "https://github.com/downmoney/nextjs-lambda"
   },
   "license": "MIT",
   "author": "Jan Soukup <jan@ssoukup.com>",
@@ -25,7 +25,7 @@
     "build:next": "./scripts/build-next-layer.sh",
     "build:sharp": "./scripts/build-sharp-layer.sh",
     "cdk:deploy": "cdk deploy",
-    "release": "node ./dist/cli.js shipit --gitUser @sladg --gitEmail jan@ssoukup.com"
+    "release": "node ./dist/cli.js shipit --gitUser @downmony --gitEmail bygone.jovial_0j@icloud.com"
   },
   "dependencies": {
     "@aws-cdk/aws-apigatewayv2-alpha": "^2.41.0-alpha.0",
