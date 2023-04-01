@@ -1,6 +1,6 @@
 {
   "name": "@downmoney/nextjs-lambda",
-  "version": "3.7.0",
+  "version": "3.6.15",
   "description": "Plug-and-play lambda for replacing default NextJS image optimization handler.",
   "repository": {
     "type": "git",
