@@ -7,4 +7,4 @@ export const nextLayerZipPath = path.resolve(__dirname, './next-layer.zip')
 export const cdkFolderPath = path.resolve(__dirname, '../cdk')
 
 export const skipCiFlag = '[skip ci]'
-export const nextServerConfigRegex = /(?<=conf: )(.*)(?=,)/
+export const nextServerConfigRegex = /(?<=const nextConfig = )(.*)/
